@@ -1,0 +1,1 @@
+add_executable(local-proc-inj main.cpp)
