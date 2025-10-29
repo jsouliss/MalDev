@@ -19,3 +19,10 @@ Users are advised to study and execute these examples in isolated environments, 
 ## Educational Focus
 
 Understanding how malware operates is crucial for developing effective cybersecurity measures. This repository aims to enhance knowledge in the field of cybersecurity and should not be used for malicious purposes.
+
+## Toolchains
+
+For operational security reasons, development is performed on Linux and macOS systems. This prevents:
+
+- Unintended telemetry or sample submission during development
+- Exposure of research techniques to security vendors

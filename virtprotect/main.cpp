@@ -9,6 +9,7 @@ int Error(const char* errMsg) {
     printf("%d (%d)\n", errMsg, GetLastError);
     return 1;
 }
+
 // For non mingw
 // #pragma section(".text")
 // __declspec(allocate(".text"))unsigned char shellcode [] =
@@ -29,8 +30,8 @@ int main() {
         return Error("Failure at VirtualAlloc");
     }
 
-    printf("|- Shellcode     -| : 0x%016p\n", (void*)shellcode);
-    printf("|- Memory Buffer -| : 0x%016p\n", (void*)procBuff);
+    printf("|- Shellcode     -| : 0x%-016p\n", (void*)shellcode);
+    printf("|- Memory Buffer -| : 0x%-016p\n", (void*)procBuff);
 
     // Put shellcode in allocated memory R/W
     RtlMoveMemory(procBuff, shellcode, shellcode_len);
