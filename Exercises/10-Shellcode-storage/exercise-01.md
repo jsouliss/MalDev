@@ -2,9 +2,9 @@
 
 ## Chapter 10-3_01
 
-1. Generate msfvenom calc shellcode and use it instead of the shellcode provided within the loader. Which section does the shellcode end up in?
-   a. Force the variable to be compiled in the .text section. This can be done with the
-   __declspec attribute in cl or the __attribute__ attribute in mingw.
+- 1. Generate msfvenom calc shellcode and use it instead of the shellcode provided within the loader. Which section does the shellcode end up in?
+
+  - a. Force the variable to be compiled in the .text section. This can be done with the `__declspec` attribute in cl or the `__attribute__` attribute in mingw.
 
 ---
 
@@ -20,7 +20,7 @@
 
 - Within the loader the shellcode can be found in the stack section. 
 
-![stack_x64dbgImage](assets/exercise-10-3_01.png)
+![stack_x64dbgImage](https://github.com/jsouliss/MalDev/blob/212ca20c0096de8afecec8afdaccd38ccd34f3a1/assets/exercise-10-3_01.png)
 
 <br>
 
