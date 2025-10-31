@@ -6,11 +6,7 @@
    a. Force the variable to be compiled in the .text section. This can be done with the
    __declspec attribute in cl or the __attribute__ attribute in mingw.
 
-<br>
-
 ---
-
-<br>
 
 ## Task 1
 
@@ -24,6 +20,8 @@
 
 - Within the loader the shellcode can be found in the stack section. 
 
+![stack_x64dbgImage](assets/exercise-10-3_01.png)
+
 <br>
 
 - The second memory address is where the VirtualProtect operation occurs, which is the memory region that our shellcode is located in.
@@ -34,11 +32,7 @@
 > - This is a basic OPSEC improvement but not sufficient evasion
     for enterprise environments.
 
-<br>
-
 ---
-
-<br>
 
 ## Task 2
 
